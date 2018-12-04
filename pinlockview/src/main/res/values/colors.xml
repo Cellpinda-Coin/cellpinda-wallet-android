@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryAlpha">#88ffffff</color>
+    <color name="colorPrimaryAlphaLight">#33ffffff</color>
+    <color name="colorPrimaryAlphaLightest">#10ffffff</color>
+    <color name="colorSecondary">#F9F9F9</color>
+    <color name="colorPrimaryDark">#4F4F4F</color>
+    <color name="colorPrimaryDarkLight">#888888</color>
+    <color name="colorPrimaryDarkTint">#C1C3C3</color>
+    <color name="colorPrimaryDarkAlpha">#18000000</color>
+    <color name="colorPrimaryDarkAlphaLightest">#10000000</color>
+    <color name="colorPrimaryGray">#666666</color>
+    <color name="colorAccent">#7986cb</color>
+    <color name="colorAccentAlphaLight">#337986cb</color>
+    <color name="colorAccentAlpha">#667986cb</color>
+    <color name="colorAccentLight">#b39ddb</color>
+    <color name="colorTextLight">#757575</color>
+    <color name="colorTextLighter">#a0a0a0</color>
+    <color name="colorTextLightest">#C1C3C3</color>
+    <color name="colorAccentSecondary">#e1bee7</color>
+    <color name="colorAccentSecondaryDark">#f26d7d</color>
+    <color name="colorOrange">#FFB145</color>
+    <color name="colorOrangeDark">#EF5113</color>
+    <color name="colorLightGray">#E5E5E5</color>
+    <color name="colorDisabled">#e8eaf6</color>
+    <color name="colorIndigo">#5c6bc0</color>
+
+    <color name="white">#fff</color>
+    <color name="greyish">#aaa8a8</color>
+    <color name="mine_shaft">#303030</color>
+
+</resources>

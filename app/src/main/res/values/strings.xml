@@ -1,0 +1,207 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Cellpinda Coin Wallet</string>
+    <string name="kakao_app_key">{your-key-here}</string>
+
+    <!-- Menu in Tab -->
+    <string name="txt_menu_1">Presale</string>
+    <string name="txt_menu_2">Deposit</string>
+    <string name="txt_menu_3">My Transaction</string>
+    <string name="txt_menu_4">Reward/Recommend</string>
+    <string name="txt_menu_5">Notice</string>
+
+    <string name="txt_contact_tab_1">Recommendees</string>
+    <string name="txt_contact_tab_2">Contacts</string>
+
+    <!-- Menu in Setting -->
+    <string name="txt_setting_menu_about">about</string>
+    <string name="txt_drawer_menu_1">Change PIN code</string>
+    <string name="txt_drawer_menu_2">My Contacts</string>
+    <string name="txt_drawer_menu_3">Coin / Corp. Home</string>
+    <string name="txt_drawer_menu_4">Enable Notification</string>
+    <string name="txt_drawer_menu_5">App Version - </string>
+    <string name="txt_drawer_menu_6">Contact Direct</string>
+    <string name="txt_drawer_menu_7">Logout</string>
+    <string name="txt_drawer_open">Open navigation drawer</string>
+    <string name="txt_drawer_close">Close navigation drawer</string>
+
+    <!-- Sub Scene Title -->
+    <string name="txt_title_about">About</string>
+    <string name="txt_title_setting">Setting</string>
+    <string name="txt_cellin_level">/ Cellin: Level %1$d</string>
+
+    <!-- First run -->
+    <string name="txt_title_req_perm">Need permissions</string>
+    <string name="txt_msg_req_perm">Some permissions are required to do the task.</string>
+    <string name="txt_msg_perm_denied">Can not use Wallet for not setting permissions. Leaving wallet now.</string>
+
+    <!-- New Wallet Scene -->
+    <string name="txt_recom_id">Referral ID</string>
+    <string name="txt_recom_id_none">None Referral ID</string>
+    <string name="txt_keyword_line1">Private Keywords Info.</string>
+    <string name="txt_keyword_line2">To avoid losing your funds,\nplease keep your keywords\nsafely via backup.</string>
+    <string name="txt_keyword_line3">※ This keywords present only once,\nplease be careful</string>
+    <!-- Wallet Restore Scene -->
+    <string name="txt_restore_line1">If you have done your backup,\nplease insert your private keywords below. Make sure there are no spaces before or after the entire keyword.</string>
+
+    <!-- Notification -->
+    <string name="txt_title_notification_t">Cellpinda Wallet Coin Purchase</string>
+    <string name="txt_title_notification_s">Cellpinda Wallet Deposit/Withdrawal</string>
+    <string name="txt_title_notification_b">Cellpinda Wallet Bonus Deposit</string>
+    <string name="txt_title_notification_m">Cellpinda Wallet Deposit</string>
+    <string name="txt_title_notification_p">Cellpinda Wallet Coin Exchange</string>
+    <string name="txt_buy_stat_depo">Purchase request of %1$s CPD approved and processing</string>
+    <string name="txt_buy_stat_with">Reception of %1$s CPD in progress</string>
+    <string name="txt_buy_stat_comp">Reception of %1$s CPD is complete</string>
+    <string name="txt_buy_stat_fail">Failed processing purchase of %1$s CPD. If repeats, ask the administrator.</string>
+
+    <!-- Send Scene -->
+    <string name="txt_balance_symbol">Cellpinda Coin Balance</string>
+    <string name="txt_balance_eth">Ethereum Balance</string>
+    <string name="txt_balance_krw">Total Fiat Currency Value (ⓐ+ⓑ+ⓒ)</string>
+    <string name="txt_amount">Amount</string>
+    <string name="txt_hint_eth_amt">Input Payment Amount</string>
+    <string name="txt_send_to">Send to</string>
+    <string name="txt_send_to_hint">input destination address</string>
+    <string name="txt_min_amt">Minimum transfer amount is 0.1 KAI</string>
+    <string name="txt_wire_transfer_1">Transfer amount</string>
+    <string name="txt_wire_transfer_2">%1$s KAI</string>
+    <string name="txt_commission_1">Commission</string>
+    <string name="txt_commission_2">0.0001 KAI</string>
+    <string name="txt_actual_fee">Actual transfer amount </string>
+    <string name="txt_actual_fee_amt">%1$s KAI</string>
+    <string name="txt_total">Total</string>
+    <string name="txt_buy">Buy</string>
+    <string name="txt_bonus">Bonus</string>
+    <string name="txt_point">Point</string>
+    <string name="txt_won">KRW</string>
+
+    <string name="txt_recommendee">Name</string>
+    <string name="txt_deposit_amt">Deposit Amount</string>
+
+    <!-- Receive Scene -->
+    <string name="txt_recv_addr">My Ethereum/Cellpinda Coin Address</string>
+    <string name="txt_export_addr">Export Address</string>
+
+    <!-- Transaction History Scene -->
+    <string name="txt_no_history">There\'s no transaction history</string>
+    <!-- Transaction Item Box -->
+    <string name="txt_tx_hash">TX Hash</string>
+    <string name="txt_from">From</string>
+    <string name="txt_to">To</string>
+    <string name="txt_token_purchase">▲ Purchase request</string>
+    <string name="txt_token_payment">▼ Coin Receipt</string>
+    <string name="txt_value">Amount</string>
+    <string name="txt_years">years</string>
+    <string name="txt_months">months</string>
+    <string name="txt_days">days</string>
+    <string name="txt_hours">hours</string>
+    <string name="txt_minutes">minutes</string>
+    <string name="txt_just_now">just now</string>
+    <string name="txt_ago">ago</string>
+
+    <!-- About Scene -->
+    <string name="txt_about_line1">Cellpinda Coin Wallet %s</string>
+    <string name="txt_about_line2">© 2018 Cellpinda Inc.</string>
+    <string name="txt_about_line3">cto@cellpinda.com</string>
+    <string name="txt_about_line4">http://coin.cellpinda.com/</string>
+
+    <!-- Lock Screen Scene -->
+    <string name="txt_enter_pw">ENTER PIN</string>
+    <!-- Change/Create PIN Scene -->
+    <string name="txt_enter_curr_pw">ENTER PIN</string>
+    <string name="txt_enter_new_pw">ENTER NEW PIN</string>
+    <string name="txt_enter_pw_again">ENTER NEW PIN AGAIN</string>
+
+    <!-- Buttons -->
+    <string name="txt_btn_do_cancel">CANCEL</string>
+    <string name="txt_btn_restore">RESTORE</string>
+    <string name="txt_btn_in">DEPOSIT</string>
+    <string name="txt_btn_out">WITHDRAWAL</string>
+    <string name="txt_btn_info">INFO</string>
+    <string name="txt_btn_ok">OK</string>
+    <string name="txt_btn_copy">COPY</string>
+    <string name="txt_btn_share">SHARE</string>
+    <string name="txt_btn_sms_req">SEND SMS</string>
+    <string name="txt_btn_sms_no">Verification No.</string>
+    <string name="txt_btn_sms_conf">SMS CONFIRM</string>
+    <string name="txt_btn_confirm">CONFIRM</string>
+    <string name="txt_btn_next">NEXT</string>
+    <string name="txt_btn_close">CLOSE</string>
+    <string name="txt_btn_send">SEND</string>
+    <string name="txt_buy_partial">Buy Cellpinda Coin</string>
+    <string name="txt_btn_buy">Buy Cellpinda</string>
+    <string name="txt_btn_buy_product">Buy Products</string>
+    <string name="txt_btn_fill">Fill Ethereum</string>
+    <string name="txt_btn_myaddr_etherscan">View in Blockchain</string>
+    <string name="txt_btn_point_exchange">ExchangeToPoint</string>
+    <string name="txt_btn_new_wallet">New Wallet</string>
+    <string name="txt_btn_restore_wallet">Restore Wallet</string>
+    <string name="txt_btn_goto_history">GO HISTORY</string>
+    <string name="txt_mobile_no">Mobile Number</string>
+    <string name="txt_user_name">UserName</string>
+    <string name="txt_user_pass">Password</string>
+    <string name="txt_go_coin_home">Coin Home</string>
+    <string name="txt_go_corp_home">Corp. Home</string>
+    <string name="txt_full_amount">TotalQuantity</string>
+    <string name="txt_partial_amount">PartialQuantity</string>
+    <string name="txt_req_buy">PurchaseRequest</string>
+    <string name="txt_eth_price_cmc">※ 1 ETH = %1$s KRW\n※ 5 KRW = 1 CPD</string>
+    <string name="txt_expt_pay_amt">※ Expected payment amount is %1$s CPD</string>
+
+    <!-- Contacts Scene -->
+    <string name="txt_go_recommend">Recommendation</string>
+
+    <!-- Messages -->
+    <string name="txt_msg_mobile_no_empty">Mobile number is not entered</string>
+    <string name="txt_msg_mobile_no_short">The mobile number is too short.</string>
+    <string name="txt_msg_passcode_null_or_short">Please enter your PIN code correctly.</string>
+    <string name="txt_msg_create_restore_wallet">Create or restore your Cellpinda wallet</string>
+
+    <string name="txt_msg_input_name">Please Input Your Name</string>
+    <string name="txt_msg_name_len">Name must be at least 2 characters</string>
+    <string name="txt_msg_sms_cert">Please SMS verification</string>
+    <string name="txt_msg_sms_wrong">SMS verification number is incorrect</string>
+    <string name="txt_msg_sms_success">Verified!</string>
+    <string name="txt_msg_no_auth">Authentication information does not match. Please check your mobile number and password!</string>
+    <string name="txt_msg_create_success">Account has been created. Please login(Restore Wallet)!</string>
+    <string name="txt_msg_confirm_logout">Are you sure you want to delete the currently logged in information and sign out?</string>
+    <string name="txt_msg_go_where">Which site do you want to go to?</string>
+    <string name="txt_msg_all_amt_avail">Would you like to\npurchase CPD with full\namount of Ethereum?</string>
+    <string name="txt_msg_eth_to_cpd_confirm">Would you like to\npurchase %2$s CPD\nwith %1$s ETH?</string>
+    <string name="txt_msg_min_amt">Minimum amount of payment is 0.1 ETH</string>
+    <string name="txt_msg_min_amt_short">※ Minimum amount is 0.1 ETH</string>
+    <string name="txt_msg_payment_desc">※ 1 CPD = 0.0044 $\n※ Will withdraw %1$s ETH\n----------------------------------------\n※ Expected to pay %2$s CPD</string>
+    <string name="txt_tv_min_amt">Min 0.1 ETH</string>
+    <string name="txt_tv_max_amt">Max %1$s ETH</string>
+    <string name="txt_msg_deposit_this">※ Please deposit Etherium to the address abov.</string>
+    <string name="txt_msg_wallet_creation">New wallet has been created!</string>
+    <string name="txt_msg_perm_agree">Permission Usage Aggrement</string>
+    <string name="txt_msg_sent_succ">Sent Successfully</string>
+    <string name="txt_msg_sent_fail">Failed to Send</string>
+    <string name="txt_msg_least_gas">※ Minimum of 0.005 ETH must be retained for coin deposit/withdrawal</string>
+    <string name="txt_msg_buy_req_success">A purchase request has been made. It takes about 10 minutes to complete the purchase, so please check your transaction details after a while.</string>
+    <string name="txt_msg_buy_req_success_title">A purchase request has been made!</string>
+    <string name="txt_msg_buy_req_success_content">※ It takes about 10 minutes to complete the purchase, so please check your transaction details after a while.</string>
+    <string name="txt_msg_no_acc_finish">Couldn\'t find the user information, application will be terminated.</string>
+    <string name="txt_msg_copied">Copied to clipboard</string>
+    <string name="txt_msg_no_matching_kw">There\'s no matching address w                                                                                                                                                                                                                                                        ith this keywords, please try again</string>
+    <string name="txt_msg_fill_addr">Please fill out address field</string>
+    <string name="txt_msg_fill_amt">Please fill out amount field</string>
+    <string name="txt_msg_act_amt_min">Actual transfer amount should more than 0.1</string>
+    <string name="txt_msg_act_amt_less_bal">Transfer amount should less or equal to balance</string>
+    <string name="txt_msg_pw_not_match">PIN code does not match!</string>
+    <string name="txt_msg_confirm_pw_not_match">PIN code does not match!</string>
+    <string name="txt_msg_pw_not_match_again">PIN code does not match, please try again</string>
+    <string name="txt_msg_err_comm">Network response is abnormal, please try again</string>
+    <string name="txt_msg_wallet_restored">Wallet has been restored!</string>
+    <string name="txt_msg_need_pw_creation">Your wallet will be created after setting your password.</string>
+    <string name="txt_msg_check_internet">Please check Internet Connection</string>
+    <string name="txt_msg_function_not_ready">Function is being prepared.\nPlease wait for the next update!</string>
+    <string name="txt_msg_sess_expired">Logged out for not using a long time. Please sign in again.</string>
+    <string name="txt_msg_back_again">Press again to exit</string>
+
+    <string name="default_notification_channel_id">private</string>
+    <string name="default_notification_channel_name">Private Message</string>
+
+</resources>

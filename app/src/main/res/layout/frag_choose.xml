@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal|bottom"
+    android:paddingStart="30dp"
+    android:paddingEnd="30dp"
+    android:gravity="center"
+    android:paddingBottom="50dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_msg_create_restore_wallet"
+        android:textSize="24dp"
+        android:textColor="@color/colorTextLighter"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        />
+
+    <Button
+        android:id="@+id/btn_new_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/txt_btn_new_wallet"
+        android:theme="@style/AppTheme.Button.Colored"
+        android:gravity="center"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <Button
+        android:id="@+id/btn_restore_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/txt_btn_restore_wallet"
+        android:theme="@style/AppTheme.Button"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        />
+
+</LinearLayout>

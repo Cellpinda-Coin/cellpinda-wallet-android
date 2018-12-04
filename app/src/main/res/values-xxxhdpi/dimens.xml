@@ -1,0 +1,5 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="lockscreen_contents_margin_top">230dp</dimen>
+    <dimen name="lockscreen_contents_margin_bottom">-230dp</dimen>
+</resources>

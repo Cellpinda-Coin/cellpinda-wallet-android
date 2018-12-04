@@ -1,0 +1,204 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">셀핀다 모바일 월렛</string>
+
+    <!-- Menu in Tab -->
+    <string name="txt_menu_1">프리세일</string>
+    <string name="txt_menu_2">입금하기</string>
+    <string name="txt_menu_3">입출금내역</string>
+    <string name="txt_menu_4">보상/추천</string>
+    <string name="txt_menu_5">셀핀다소식</string>
+
+    <string name="txt_contact_tab_1">피추천인</string>
+    <string name="txt_contact_tab_2">주소록</string>
+
+    <!-- Menu in Setting -->
+    <string name="txt_setting_menu_about">소개</string>
+    <string name="txt_drawer_menu_1">PIN 변경</string>
+    <string name="txt_drawer_menu_2">내 추천내역 / 주소록</string>
+    <string name="txt_drawer_menu_3">코인 / 기업 홈 바로가기</string>
+    <string name="txt_drawer_menu_4">알림메시지 사용</string>
+    <string name="txt_drawer_menu_5">앱버전 - </string>
+    <string name="txt_drawer_menu_6">직접문의</string>
+    <string name="txt_drawer_menu_7">로그아웃</string>
+    <string name="txt_drawer_open">메뉴열기</string>
+    <string name="txt_drawer_close">메뉴닫기</string>
+    <!-- Sub Scene Title -->
+    <string name="txt_title_setting">설정</string>
+    <string name="txt_title_about">소개</string>
+    <string name="txt_cellin_level">/ 셀린: 레벨 %1$d</string>
+
+    <!-- First run -->
+    <string name="txt_title_req_perm">휴대폰 사용권한 요청</string>
+    <string name="txt_msg_req_perm">모바일 월렛을 사용하기 위해 휴대폰 사용권한 설정이 필요합니다</string>
+    <string name="txt_msg_perm_denied">권한설정을 하지않으면 사용할 수 없습니다. 월렛을 종료합니다.</string>
+
+    <!-- New Wallet Scene -->
+    <string name="txt_recom_id">추천인 ID</string>
+    <string name="txt_recom_id_none">추천인 없음</string>
+    <string name="txt_keyword_line1">개인 키워드 안내</string>
+    <string name="txt_keyword_line2">지갑을 분실할 경우를 대비하여,\n위의 키워드들을 별도로 안전하게 보관하세요.</string>
+    <string name="txt_keyword_line3">※ 해당 키워드들은 이 화면에서만 1회 표시됩니다, 키워드를 분실하면 지갑을 복구할 수 없으니 주의하세요.</string>
+    <!-- Wallet Restore Scene -->
+    <string name="txt_restore_line1">개인 키워드 백업을 해 두셨다면\n지갑 복원을 위해 아래에 키워드를 입력해주세요. 전체 키워드의 앞/뒤에 공백이 없어야 합니다.</string>
+
+    <!-- Notification -->
+    <string name="txt_title_notification_t">셀핀다코인 구매 알림</string>
+    <string name="txt_title_notification_s">셀핀다월렛 입출금 알림</string>
+    <string name="txt_title_notification_b">셀핀다코인 보너스지급 알림</string>
+    <string name="txt_title_notification_m">셀핀다코인 지급 알림</string>
+    <string name="txt_title_notification_p">셀핀다코인 환전 알림</string>
+    <string name="txt_buy_stat_depo">%1$s CPD 구매요청이 승인되어 처리 중 입니다</string>
+    <string name="txt_buy_stat_with">%1$s CPD 지급 처리 중 입니다</string>
+    <string name="txt_buy_stat_comp">%1$s CPD 지급 완료 되었습니다</string>
+    <string name="txt_buy_stat_fail">%1$s CPD 구매처리 중 에러가 발생했습니다. 반복될 경우 관리자에게 문의해주세요.</string>
+
+    <!-- Send Scene -->
+    <string name="txt_balance_symbol">셀핀다코인 보유량</string>
+    <string name="txt_balance_eth">이더리움 보유량</string>
+    <string name="txt_balance_krw">총 현금가치 (ⓐ+ⓑ+ⓒ)</string>
+    <string name="txt_send_to">받는 주소</string>
+    <string name="txt_send_to_hint">수신주소 입력</string>
+    <string name="txt_amount">수량</string>
+    <string name="txt_hint_eth_amt">송금수량 입력</string>
+    <string name="txt_min_amt">최소 금액은 0.006 입니다</string>
+    <string name="txt_wire_transfer_1">출금할 수량</string>
+    <string name="txt_wire_transfer_2">%1$s KAI</string>
+    <string name="txt_commission_1">수수료</string>
+    <string name="txt_commission_2">0.0001 CPD</string>
+    <string name="txt_actual_fee">실제 출금되는 금액은</string>
+    <string name="txt_actual_fee_amt">%1$s CPD</string>
+    <string name="txt_total">합계</string>
+    <string name="txt_buy">구매</string>
+    <string name="txt_bonus">보너스</string>
+    <string name="txt_point">포인트</string>
+    <string name="txt_won">원</string>
+
+    <string name="txt_recommendee">성함</string>
+    <string name="txt_deposit_amt">보유량</string>
+
+    <!-- Receive Scene -->
+    <string name="txt_recv_addr">내 이더리움/셀핀다코인 주소</string>
+    <string name="txt_export_addr">주소 내보내기</string>
+
+    <!-- Transaction History Scene -->
+    <string name="txt_no_history">거래 내역이 없습니다</string>
+    <!-- Transaction Item Box -->
+    <string name="txt_tx_hash">거래ID</string>
+    <string name="txt_from">송신주소</string>
+    <string name="txt_to">수신주소</string>
+    <string name="txt_token_purchase">▲ 코인구매요청</string>
+    <string name="txt_token_payment">▼ 코인지급</string>
+    <string name="txt_value">수량</string>
+    <string name="txt_years">년</string>
+    <string name="txt_months">개월</string>
+    <string name="txt_days">일</string>
+    <string name="txt_hours">시간</string>
+    <string name="txt_minutes">분</string>
+    <string name="txt_just_now">방금</string>
+    <string name="txt_ago">전</string>
+
+    <!-- About Scene -->
+    <string name="txt_about_line1">Cellpinda Coin Wallet %s</string>
+    <string name="txt_about_line2">© 2018 Cellpinda Inc.</string>
+    <string name="txt_about_line3">cto@cellpinda.com</string>
+    <string name="txt_about_line4">http://coin.cellpinda.com/</string>
+
+    <!-- Lock Screen Scene -->
+    <string name="txt_enter_pw">PIN 입력</string>
+    <!-- Change/Create Passcode Scene -->
+    <string name="txt_enter_curr_pw">현재 PIN</string>
+    <string name="txt_enter_new_pw">새 PIN 입력</string>
+    <string name="txt_enter_pw_again">새 PIN 확인</string>
+
+    <!-- Buttons -->
+    <string name="txt_btn_do_cancel">취소</string>
+    <string name="txt_btn_restore">복구하기</string>
+    <string name="txt_btn_in">입금</string>
+    <string name="txt_btn_out">출금</string>
+    <string name="txt_btn_info">알림</string>
+    <string name="txt_btn_ok">확인</string>
+    <string name="txt_btn_share">공유</string>
+    <string name="txt_btn_copy">복사</string>
+    <string name="txt_btn_sms_req">인증요청</string>
+    <string name="txt_btn_sms_no">인증번호</string>
+    <string name="txt_btn_confirm">확인</string>
+    <string name="txt_btn_sms_conf">인증확인</string>
+    <string name="txt_btn_next">다음</string>
+    <string name="txt_btn_close">닫기</string>
+    <string name="txt_btn_send">출금</string>
+    <string name="txt_buy_partial">셀핀다코인 구매</string>
+    <string name="txt_btn_buy_product">셀핀다제품 구매</string>
+    <string name="txt_btn_buy">셀핀다코인 구매</string>
+    <string name="txt_btn_fill">이더리움 충전</string>
+    <string name="txt_btn_myaddr_etherscan">블록체인에서 보기</string>
+    <string name="txt_btn_point_exchange">포인트로 환전</string>
+    <string name="txt_btn_new_wallet">새 지갑 만들기</string>
+    <string name="txt_btn_restore_wallet">지갑 복원</string>
+    <string name="txt_btn_goto_history">송수신내역</string>
+    <string name="txt_mobile_no">휴대폰번호</string>
+    <string name="txt_user_name">성함</string>
+    <string name="txt_user_pass">비밀번호</string>
+    <string name="txt_go_coin_home">코인홈</string>
+    <string name="txt_go_corp_home">기업홈</string>
+    <string name="txt_full_amount">전액구매</string>
+    <string name="txt_partial_amount">부분구매</string>
+    <string name="txt_req_buy">구매요청</string>
+    <string name="txt_eth_price_cmc">※ 1 ETH = %1$s원\n※ 5원 = 1 CPD</string>
+    <string name="txt_expt_pay_amt">※ 예상 지급수량 %1$s CPD</string>
+
+    <!-- Contacts Scene -->
+    <string name="txt_go_recommend">추천보내기</string>
+
+    <!-- Messages -->
+    <string name="txt_msg_create_restore_wallet">귀하의 셀핀다 지갑을 생성하거나 복원하십시오</string>
+    <string name="txt_msg_mobile_no_empty">휴대폰번호를 입력 해주세요</string>
+    <string name="txt_msg_mobile_no_short">휴대폰번호 길이가 맞지 않습니다</string>
+    <string name="txt_msg_passcode_null_or_short">비밀번호를 정확하게 입력해주세요</string>
+    <string name="txt_msg_input_name">성함을 입력해주세요</string>
+    <string name="txt_msg_name_len">성함은 2자 이상이어야 합니다</string>
+    <string name="txt_msg_sms_cert">SMS 인증을 해주시기 바랍니다</string>
+    <string name="txt_msg_sms_wrong">SMS 인증번호가 맞지 않습니다</string>
+    <string name="txt_msg_sms_success">인증되었습니다!</string>
+    <string name="txt_msg_no_auth">인증정보가 일치하지 않습니다. 휴대폰번호와 비밀번호를 확인해주세요!</string>
+    <string name="txt_msg_create_success">계정이 생성되었습니다. 로그인(지갑복원)을 해주세요!</string>
+    <string name="txt_msg_confirm_logout">정말 로그아웃 하시겠습니까?</string>
+    <string name="txt_msg_go_where">어느 홈페이지로 이동하시겠습니까?</string>
+    <string name="txt_msg_all_amt_avail">이더리움으로 셀핀다코인을\n구매하시겠습니까?</string>
+    <string name="txt_msg_eth_to_cpd_confirm">%1$s ETH 로\n%2$s CPD 를\n구매하시겠습니까?</string>
+    <string name="txt_msg_min_amt">보유량이 부족합니다.\n0.1ETH 이상 구매하실 수 있습니다</string>
+    <string name="txt_msg_min_amt_short">※ 0.1 ETH 이상 구매 가능합니다</string>
+    <string name="txt_msg_payment_desc">※ 1 CPD = 5 원\n※ 송금수량 %1$s ETH\n----------------------------------------\n※ 예상 지급수량 %2$s CPD</string>
+    <string name="txt_tv_min_amt">최소 0.1 ETH</string>
+    <string name="txt_tv_max_amt">최대 %1$s ETH</string>
+    <string name="txt_msg_deposit_this">※ 위 주소로 이더리움을 입금 해주세요</string>
+    <string name="txt_msg_wallet_creation">새 지갑을 만들었습니다!</string>
+    <string name="txt_msg_perm_agree">권한사용 동의</string>
+    <string name="txt_msg_sent_succ">전송하였습니다!</string>
+    <string name="txt_msg_sent_fail">전송실패</string>
+    <string name="txt_msg_least_gas">※ 암호화폐 입출금을 위해 최소 0.005 ETH는 보유해야 합니다</string>
+    <string name="txt_msg_buy_req_success">구매요청을 하였습니다. 구매완료까지는 10분 정도 시간이 걸리오니, 잠시 후 거래내역을 확인해주세요.</string>
+    <string name="txt_msg_buy_req_success_title">구매요청을 하였습니다!</string>
+    <string name="txt_msg_buy_req_success_content">※ 구매완료까지는 10분 안팎의 시간이 필요하므로, 잠시 후 거래내역을 확인해주세요</string>
+    <string name="txt_msg_no_acc_finish">사용자 정보를 찾을 수 없어 종료합니다</string>
+    <string name="txt_msg_copied">클립보드에 복사되었습니다</string>
+    <string name="txt_msg_no_matching_kw">키워드와 일치하는 지갑 주소가 없습니다. 다시 한 번 해보세요.</string>
+    <string name="txt_msg_fill_addr">수신주소란을 입력해주세요</string>
+    <string name="txt_msg_fill_amt">전송수량을 입력해주세요</string>
+    <string name="txt_msg_act_amt_min">전송 수량은 0.1 이상이어야 합니다</string>
+    <string name="txt_msg_act_amt_less_bal">전송수량은 잔고량 이하이어야 합니다</string>
+    <string name="txt_msg_pw_not_match">비밀번호가 일치하지 않습니다</string>
+    <string name="txt_msg_confirm_pw_not_match">비밀번호가 일치하지 않습니다</string>
+    <string name="txt_msg_pw_not_match_again">비밀번호가 일치하지 않습니다. 비밀번호를 확인 해보세요</string>
+    <string name="txt_msg_err_comm">네트워크 응답이 비정상적입니다. 확인 후 다시 시도 해주세요</string>
+    <string name="txt_msg_wallet_restored">지갑을 복구하였습니다!</string>
+    <string name="txt_msg_need_pw_creation">비밀번호를 입력하셔야 지갑이 생성됩니다.</string>
+    <string name="txt_msg_check_internet">인터넷 연결이 원활하지 않습니다. 인터넷 연결을 확인해주세요</string>
+    <string name="txt_msg_function_not_ready">기능 준비 중 입니다.\n다음 업데이트를 기다려 주세요!</string>
+    <string name="txt_msg_sess_expired">장시간 사용하지 않아 로그아웃 되었습니다. 다시 로그인 하세요</string>
+    <string name="txt_msg_back_again">종료 하시려면 한번 더 누르세요</string>
+
+    <string name="default_notification_channel_id">private</string>
+    <string name="default_notification_channel_name">Private Message</string>
+
+</resources>

@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="?attr/colorPrimaryDark"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:gravity="bottom"
+    >
+
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_drawer_title"
+        />
+
+    <ImageView
+        android:id="@+id/iv_change_profile"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_profile_change"
+        android:layout_gravity="right|bottom"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tx_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User name"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_gravity="bottom|left"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="10dp"
+        />
+
+</FrameLayout>

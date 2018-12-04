@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.cellpinda.coin.wallet.ContactsActivity"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        app:popupTheme="?attr/actionBarPopupTheme"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="top"
+        android:elevation="4dp"
+        >
+
+        <TextView
+            android:id="@+id/app_title_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_drawer_menu_2"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorLogoTitle"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/sel_bg_secondary"
+        android:clickable="true"
+        android:layout_gravity="bottom"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_forward_white"
+            android:layout_gravity="bottom|start"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="top"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/bg_right_bottom_cellpinda"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start|center_vertical"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:background="#fafafa"
+            >
+
+            <ImageView
+                android:id="@+id/btn_recommend"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_kakao_talk"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_go_recommend"
+                android:textSize="14dp"
+                android:textColor="@color/colorLogoTitle"
+                android:layout_marginStart="6dp"
+                />
+
+        </LinearLayout>
+
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            >
+
+            <android.support.design.widget.TabItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_contact_tab_1"
+                />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_contact_tab_2"
+                />
+
+        </android.support.design.widget.TabLayout>
+
+        <ListView
+            android:id="@+id/view1_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+
+</FrameLayout>

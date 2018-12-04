@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cellpinda.coin.wallet.FirstActivity"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:paddingBottom="50dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|left"
+        >
+
+        <LinearLayout
+            android:layout_width="5dp"
+            android:layout_height="24dp"
+            android:background="@color/colorAccent"
+            android:layout_marginEnd="12dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_btn_restore_wallet"
+            android:layout_gravity="left|center_vertical"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorIndigo"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:src="@drawable/perm_group_display"
+            android:layout_marginStart="8dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentStart="true"
+            />
+        <EditText
+            android:id="@+id/mobile_no"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/sel_border_oval"
+            android:hint="@string/txt_mobile_no"
+            android:textColorHint="@color/colorPrimaryDarkAlpha"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:lines="1"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:textColor="@color/colorTextLight"
+            android:paddingStart="38dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentStart="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:src="@drawable/perm_group_screenlock"
+            android:layout_marginStart="8dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentStart="true"
+            />
+        <EditText
+            android:id="@+id/passcode"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="@string/txt_user_pass"
+            android:textColorHint="@color/colorPrimaryDarkAlpha"
+            android:background="@drawable/sel_border_oval"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLines="1"
+            android:maxLength="20"
+            android:textSize="18sp"
+            android:textColor="@color/colorTextLight"
+            android:layout_centerInParent="true"
+            android:layout_alignParentStart="true"
+            android:paddingStart="38dp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="50dp"
+            android:text="@string/txt_btn_do_cancel"
+            android:theme="@style/AppTheme.Button"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="50dp"
+            android:text="@string/txt_btn_confirm"
+            android:theme="@style/AppTheme.Button.Colored"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

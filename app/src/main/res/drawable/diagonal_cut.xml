@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:top="@dimen/lockscreen_contents_margin_top" android:bottom="@dimen/lockscreen_contents_margin_bottom"
+        android:left="0dp" android:right="@dimen/lockscreen_contents_margin_bottom"
+        >
+        <rotate
+            android:fromDegrees="-7"
+            android:pivotX="0%"
+            android:pivotY="100%"
+            >
+            <shape android:shape="rectangle" >
+                <stroke android:color="@color/colorAccentLight" android:width="40dp"
+                    />
+                <solid
+                    android:color="@color/colorAccentLightest" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

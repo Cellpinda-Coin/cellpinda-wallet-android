@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.cellpinda.coin.wallet.ChangePwActivity"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:src="@drawable/bg_lock_title"
+        android:scaleType="centerCrop"
+        android:layout_gravity="top|center_horizontal"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/diagonal_cut"
+        />
+
+    <ViewFlipper
+        android:id="@+id/view_flip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:gravity="bottom|center_horizontal"
+        >
+        <include android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/view_curr_pw"
+            />
+        <include android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/view_new_pw"
+            />
+        <include android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/view_confirm_pw"
+            />
+    </ViewFlipper>
+
+</FrameLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- RECEIVE ITEM(IN) -->
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="com.cellpinda.coin.wallet.MainActivity"
+    android:id="@+id/symbol_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="6dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="50dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="10dp"
+    android:elevation="10dp"
+    card_view:cardElevation="10dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardPreventCornerOverlap="true"
+    >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:stretchColumns="*"
+        android:weightSum="1"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        >
+
+        <TableRow
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="@string/txt_btn_info"
+                android:theme="@style/AppTheme.Button.Colored"
+                android:gravity="left|center_vertical"
+                android:textSize="12sp"
+                android:paddingStart="9dp"
+                android:paddingEnd="9dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:gravity="right|center_vertical"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:singleLine="true"
+                android:visibility="invisible"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_span="2"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/txt_no_history"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.v7.widget.CardView>

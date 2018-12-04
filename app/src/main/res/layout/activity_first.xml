@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cellpinda.coin.wallet.FirstActivity"
+    android:background="@color/colorPrimary"
+    >
+
+    <ImageView
+        android:id="@+id/iv_bg_splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|bottom"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        />
+    <!-- Top bg image -->
+    <ImageView
+        android:id="@+id/iv_bg_lab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/bg_chemistry"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2018 © Cellpinda Inc. All rights reserved."
+        android:textSize="10sp"
+        android:textColor="@color/colorTextLightest"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="20dp"
+        />
+
+    <!-- Fragment area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        >
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_marginTop="?actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            />
+    </LinearLayout>
+
+    <!-- Logo -->
+    <LinearLayout
+        android:id="@+id/ll_logo_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_logo_big"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/ic_logo_symbol_color"
+            android:scaleType="fitCenter"
+            />
+
+        <ImageView
+            android:id="@+id/iv_logo_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_logo_wordmark"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

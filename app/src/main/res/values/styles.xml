@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorAccentDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.Button.Flat" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.Button.FlatColored" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.Button.Small.FlatColored" parent="Widget.AppCompat.Button.Small">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.Button.Small.Colored" parent="Widget.AppCompat.Button.Small">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="colorButtonNormal">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Button.Colored" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="colorButtonNormal">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Button.ColoredRight" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="android:topRightRadius">20dp</item>
+        <item name="android:bottomRightRadius">20dp</item>
+    </style>
+
+    <style name="AppTheme.Button.Secondary" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="colorButtonNormal">@color/colorAccentLight</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!--<item name="android:windowIsFloating">true</item>-->
+    <style name="DialogWithCorners" parent="android:Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowBackground">@drawable/bg_round_corner</item>
+    </style>
+
+</resources>

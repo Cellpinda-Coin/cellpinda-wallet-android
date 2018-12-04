@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_item_1"
+            android:icon="@drawable/perm_group_screenlock"
+            android:title="@string/txt_drawer_menu_1" />
+        <item
+            android:id="@+id/drawer_item_2"
+            android:icon="@drawable/perm_group_personal_info"
+            android:title="@string/txt_drawer_menu_2" />
+        <item
+            android:id="@+id/drawer_item_3"
+            android:icon="@drawable/perm_group_bookmarks"
+            android:title="@string/txt_drawer_menu_3" />
+        <!-- ic_perm_group_messages -->
+        <item
+            android:id="@+id/drawer_item_4"
+            android:icon="@drawable/perm_group_device_alarms"
+            android:title="@string/txt_drawer_menu_4"
+            app:actionLayout="@layout/view_item_switch"
+            />
+        <item
+            android:id="@+id/drawer_item_5"
+            android:icon="@drawable/perm_group_display"
+            android:title="@string/txt_drawer_menu_5" />
+        <item
+            android:id="@+id/drawer_item_6"
+            android:icon="@drawable/ic_perm_group_messages"
+            android:title="@string/txt_drawer_menu_6" />
+        <item
+            android:id="@+id/drawer_item_7"
+            android:icon="@drawable/vpn_disconnected"
+            android:title="@string/txt_drawer_menu_7" />
+    </group>
+</menu>
