@@ -118,7 +118,6 @@ class LockActivity : MethodActivity(), PinLockListener {
                 backCount = 0
             }, 1500)
         } else if (backCount==1) {
-            https@ //wallet.cellpinda.com/q/public/app/?c=r&uid=10&key=smqiqd97tij1lopm1ms0v8hpc1 (145m
             backCount = 0
             WalletLocalService.finishApp(this)
         }

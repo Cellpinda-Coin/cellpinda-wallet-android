@@ -301,7 +301,6 @@ class WalletLocalService {
             val acc = loadAccount(ctx)
             val templateId = "13432"
             val templateArgs = HashMap<String, String>()
-            // ?apn=com.cellpinda.coin.wallet&link=https://wallet.cellpinda.com/i/<?=$_SESSION[code]?>
             templateArgs["url"] = "?apn=com.cellpinda.coin.wallet&link=https://wallet.cellpinda.com/i/" + acc!!.id
             // <?=$_SESSION[name]?>님이 추천합니다.
             templateArgs["recommend"] = acc!!.name + "님이 추천합니다."

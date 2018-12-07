@@ -134,8 +134,6 @@ class SalesCacheService {
             latch.countDown()
         }
 
-        // https://cellpinda.page.link/?link=https://wallet.cellpinda.com/i/01088657020&apn=com.cellpinda.coin.wallet
-
         /**
          *
          */

@@ -126,12 +126,10 @@ class FirstActivity : MethodActivity(), GoogleApiClient.OnConnectionFailedListen
         iv_bg_lab.visibility = View.VISIBLE
         ll_logo_group.startAnimation(logoMoving)
         iv_bg_lab.startAnimation(show)
-//        iv_bg_splash.startAnimation(hide)
         Handler().postDelayed({
             if (intent!=null && intent.data!=null) {
                 // 추천인가입: 추천인 ID
                 val uri = intent.data
-//                val scheme = uri.host + " " + uri.path + " " + uri.query
                 if (uri != null) {
                     Log.d(TAG, "uri " + uri.toString())
                     recomId = uri.path.split("/")[2]
@@ -151,11 +149,16 @@ class FirstActivity : MethodActivity(), GoogleApiClient.OnConnectionFailedListen
     }
 
     fun callRecaptcha(mobileno: String, passcode: String) {
-        SafetyNet.getClient(this).verifyWithRecaptcha("6LdSAXkUAAAAAKlRVsajZOklm4KCNh4wO335If-r")
+        SafetyNet.getClient(this).verifyWithRecaptcha("6LdSAXkUAAAAAKlRVsajZOklm4KCNh4w0835If-r")
                 .addOnSuccessListener { response ->
                     if (!response.tokenResult.isEmpty()) {
                         recaptchaCalled = true
-                         reqLogin(mobileno, passcode, response.tokenResult)
+                        // For Test Mode
+                        if (mobileno==BuildConfig.TEST_ID && passcode==BuildConfig.TEST_PW) {
+                            mainViewViaLogin()
+                        } else {
+                            reqLogin(mobileno, passcode, response.tokenResult)
+                        }
                     } else {
                         Log.d(TAG, "Recap has NO token result!")
                     }
@@ -246,7 +249,6 @@ class FirstActivity : MethodActivity(), GoogleApiClient.OnConnectionFailedListen
     }
 
     /**
-      * https://wallet.cellpinda.com/q/public/app/?c=j&phone=01048187321&name=홍길동&seq=인증index&recommend=추천자분 아이디
       * 잠금 PIN 세팅하고 메인 페이지로?
       */
     fun reqCreateAccount(mobileno: String, name: String, num: String, seq: String) {
@@ -283,7 +285,7 @@ class FirstActivity : MethodActivity(), GoogleApiClient.OnConnectionFailedListen
                 if (res!!.e==0) {
                     user = res
                     m = mobileno
-                    mainViewViaLogin(res, mobileno)
+                    mainViewViaLogin()
                 } else {
                     failAuthentification()
                 }
@@ -339,7 +341,7 @@ class FirstActivity : MethodActivity(), GoogleApiClient.OnConnectionFailedListen
      * 로그인 인증이 성공하면
      *  => 핀번호 세팅
      */
-    private fun mainViewViaLogin(e: LoginVeriRes, m: String) {
+    private fun mainViewViaLogin() {
         val intent = Intent(this, ChangePwActivity::class.java)
         intent.putExtra(PARAM_NEW_ACC, true)
         startActivityForResult(intent, REQ_CODE_CREATE_PIN)

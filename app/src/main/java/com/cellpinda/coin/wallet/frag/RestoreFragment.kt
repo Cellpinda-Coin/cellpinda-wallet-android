@@ -41,7 +41,7 @@ class RestoreFragment : Fragment() {
         // user_name mobile_no sms_cert_no
         if (mobile_no.text.isNullOrBlank()) {
             return ctx.inputMobileNo()
-        } else if (mobile_no.text.toString().length<10) {
+        } else if (mobile_no.text.toString().length<4) {
             return ctx.mobileNoIsShort()
         } else if (passcode.text.isNullOrBlank() || passcode.text.length!=4) {
             return ctx.inputPasscode()

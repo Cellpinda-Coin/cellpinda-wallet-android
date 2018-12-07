@@ -69,7 +69,6 @@ class CreateFragment : Fragment() {
             if (!certRequested) {
                 WalletLocalService.warnAutoHide(ctx, R.string.txt_msg_sms_cert)
             } else {
-                // wallet.cellpinda.com/q/public/app/?c=c&phone=01048187321&num=035126
                 // confirm : confirmSms
                 Thread(Runnable {
                     try {
