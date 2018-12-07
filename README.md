@@ -32,7 +32,9 @@ Build this on Android Studio, run and then log-in (Restore wallet) with Test ID 
 
 * ETH/ERC-20 transfer function via Web3J, Infura API (sendRawTransaction).
 * For sendRawTransaction API, please refer to below, 
+
 (1) Client side [Trust Wallet](https://github.com/TrustWallet/trust-wallet-android-source),
+
 (2) server side [sendRawTransaction API](https://infura.io/docs/ethereum/json-rpc/eth_sendRawTransaction) at Infura.io.
 
 
