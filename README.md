@@ -16,7 +16,7 @@ Current version supports Ethereum and ERC-20 Token Balance inquiry, and its' tra
 
 ETH/ERC-20 transfer function is almost ready (Web3J, Infura API), but not yet implemented.
 
-Please refer to Trust Wallet in order to tranfer Tokens or Ethereum.
+Please refer to Trust Wallet(https://github.com/TrustWallet/trust-wallet-android-source) in order to tranfer Tokens or Ethereum.
 
 
 You may reach that goal via calliing sendRawTransaction at Infura API.
