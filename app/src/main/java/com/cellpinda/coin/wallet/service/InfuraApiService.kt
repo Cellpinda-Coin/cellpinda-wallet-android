@@ -40,7 +40,7 @@ class InfuraApiService {
                     Transaction.createEthCallTransaction(addr, contractAddress, encodedFunction),
                     DefaultBlockParameterName.LATEST)
                     .sendAsync().get()
-            return response.getValue()
+            return response.value
         }
 
         fun getWeb3j(ctx: Context): Web3j {

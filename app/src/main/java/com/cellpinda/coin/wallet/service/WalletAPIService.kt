@@ -38,7 +38,6 @@ interface WalletAPIService {
 
     /**
      * 이더로 토큰 구매요청
-     * app/?c=buy&uid=1111&key=651321safsdf&iamount=구매갯수
      */
     @POST("app/")
     fun buyTokenViaETH(@Query("c") c: String, @Query("uid") uid: String
