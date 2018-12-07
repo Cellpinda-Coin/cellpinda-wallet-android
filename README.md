@@ -1,9 +1,10 @@
-# cellpinda-wallet-android
+# Cellpinda Mobile Wallet - Android
+
 Android Wallet for Cellpinda Coin users
 
 Ethereum and ERC-20 compatible.
 
-This App uses Infura/Etherscan/Coinmarketcap APIs, 
+This App uses [Infura](https://infura.io/)/[Etherscan](https://etherscan.io/apis)/[Coinmarketcap](https://coinmarketcap.com/api/) APIs, 
 
 and requires 1 more additional API service that we implemented to support full functionality, 
 
@@ -16,10 +17,10 @@ Current version supports Ethereum and ERC-20 Token Balance inquiry, and its' tra
 
 ETH/ERC-20 transfer function is almost ready (Web3J, Infura API), but not yet implemented.
 
-Please refer to Trust Wallet(https://github.com/TrustWallet/trust-wallet-android-source) in order to tranfer Tokens or Ethereum.
+Please refer to [Trust Wallet](https://github.com/TrustWallet/trust-wallet-android-source) in order to tranfer Tokens or Ethereum.
 
 
-You may reach that goal via calliing sendRawTransaction at Infura API.
+You may reach that goal via calliing [sendRawTransaction API](https://infura.io/docs/ethereum/json-rpc/eth_sendRawTransaction) at Infura.io.
 
 If any suggestions, contact me to https://github.com/method76
 
