@@ -57,10 +57,10 @@ class SalesCacheService {
                         ctx.showProgress()
                     }
                 }
-                val latch = CountDownLatch(4)
+                val latch = CountDownLatch(3)
                 getEthBalance(ctx, addr, latch)
                 getEthValue(ctx, latch)
-                getBonusPoint(ctx, latch)
+//                getBonusPoint(ctx, latch)
                 getTokenBalance(ctx, addr, BuildConfig.CONTRACT_ADDR, latch)
                 latch.await()
                 ret = SalesMainData(ethbal, ethval, tokenbal, bonus, point)

@@ -242,10 +242,12 @@ class WalletLocalService {
                             sDialog.dismissWithAnimation()
                         }
                 try {
-                    diag.show()
-                    Handler().postDelayed({
-                        diag.dismissWithAnimation()
-                    }, 3500)
+                    if (diag!=null) {
+                        diag.show()
+                        Handler().postDelayed({
+                            diag.dismissWithAnimation()
+                        }, 3500)
+                    }
                 } catch (e: Exception) {
                     Log.w(TAG, e.message)
                 }

@@ -33,6 +33,7 @@ android {
             buildConfigField "String", "TEST_ID", '"7777"'
             buildConfigField "String", "TEST_PW", '"7777"'
             buildConfigField "String", "TEST_ADDR",   '"0x7f527f5973d815a7a97ada41350f0ee5a8fd0a99"'
+            buildConfigField "String", "RECAPTCHA_KEY", '"6LdSAXkUAAAAAKlRVsajZOklm4KCNh4w0835If-r"'
         }
     }
 	compileOptions {

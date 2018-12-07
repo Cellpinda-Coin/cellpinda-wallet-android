@@ -7,7 +7,7 @@ data class LoginVeriRes (
     val e: Int,
     val m: String,
     val uid: Int,
-    val key: String,
+    val key: String, // session key
     val address: String,
     val level: Int,
     val name: String,

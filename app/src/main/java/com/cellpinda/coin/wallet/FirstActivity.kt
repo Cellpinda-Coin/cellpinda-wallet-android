@@ -149,20 +149,22 @@ class FirstActivity : MethodActivity(), GoogleApiClient.OnConnectionFailedListen
     }
 
     fun callRecaptcha(mobileno: String, passcode: String) {
-        SafetyNet.getClient(this).verifyWithRecaptcha("6LdSAXkUAAAAAKlRVsajZOklm4KCNh4w0835If-r")
-                .addOnSuccessListener { response ->
-                    if (!response.tokenResult.isEmpty()) {
-                        recaptchaCalled = true
-                        // For Test Mode
-                        if (mobileno==BuildConfig.TEST_ID && passcode==BuildConfig.TEST_PW) {
-                            mainViewViaLogin()
-                        } else {
+        // For Test Mode
+        if (mobileno==BuildConfig.TEST_ID && passcode==BuildConfig.TEST_PW) {
+            user = LoginVeriRes(0, BuildConfig.TEST_ID, 10, "abcdefg"
+                , BuildConfig.TEST_ADDR, 0, "TESTER", 0.0,0.0,0.0)
+            m = BuildConfig.TEST_ID
+            mainViewViaLogin()
+        } else {
+            SafetyNet.getClient(this).verifyWithRecaptcha(BuildConfig.RECAPTCHA_KEY)
+                    .addOnSuccessListener { response ->
+                        if (!response.tokenResult.isEmpty()) {
+                            recaptchaCalled = true
                             reqLogin(mobileno, passcode, response.tokenResult)
+                        } else {
+                            Log.d(TAG, "Recap has NO token result!")
                         }
-                    } else {
-                        Log.d(TAG, "Recap has NO token result!")
-                    }
-                }.addOnFailureListener { e ->
+                    }.addOnFailureListener { e ->
                         if (e is ApiException) {
                             val apiException: ApiException = e
                             Log.e(TAG, "Recap Error message: " +
@@ -171,6 +173,7 @@ class FirstActivity : MethodActivity(), GoogleApiClient.OnConnectionFailedListen
                             Log.e(TAG, "Recap Unknown type of error: " + e.message)
                         }
                     }
+        }
     }
 
     fun inputMobileNo(): Boolean {
@@ -468,22 +471,5 @@ class FirstActivity : MethodActivity(), GoogleApiClient.OnConnectionFailedListen
             super.onActivityResult(requestCode, resultCode, data)
         }
     }
-
-    /**
-     * Calls Google's site verify API
-     */
-//    fun siteVerify(mobileno: String, passcode: String, tokenResult: String) {
-//        val param = RecaptchaReq(mobileno, passcode, tokenResult)
-//        val restService: Call<RecaptchaRes> = recapService()!!.siteverify(param)
-//        val call1: retrofit2.Response<RecaptchaRes> = restService.execute()
-//        if (call1.isSuccessful) {
-//            val res: RecaptchaRes? = call1.body()
-//            if (res!!.success) {
-//                Thread {
-//                    reqLogin()
-//                }.start()
-//                mainViewWithExistingAccount()
-//            }
-//        }
 
 }
