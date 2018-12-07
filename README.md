@@ -1,27 +1,39 @@
 # Cellpinda Mobile Wallet - Android
 
-Android Wallet for Cellpinda Coin users
+This project is made to provide Android Wallet to Cellpinda Coin (ERC-20 Token) users.
 
-Ethereum and ERC-20 compatible.
+Supports Ethereum, and any ERC-20 (with a little modification of source code) compatible.
 
-This App uses [Infura](https://infura.io/)/[Etherscan](https://etherscan.io/apis)/[Coinmarketcap](https://coinmarketcap.com/api/) APIs, 
+Uses [Infura](https://infura.io/)/[Etherscan](https://etherscan.io/apis)/[Coinmarketcap](https://coinmarketcap.com/api/) APIs, 
 
-and requires 1 more additional API service that we implemented to support full functionality, 
+and requires additional API services to authenticate to centralized membership application server and to support bonus and point functionality. But it's not a kind of important function in this wallet.
 
-but if you just want to test functionality, 
+## Built with
+* Android Studio
+* Kotlin
+* Firebase Messaging & Firestore
+* Retrofit2
+* [Pinlockview](https://github.com/aritraroy/PinLockView)
+* [Sweet Alert Dialog](https://github.com/pedant/sweet-alert-dialog)
+* Zxing and Glide
 
-Please log-in with Test ID / Password (7777 / 7777)
+## For Test
 
+If you just want to simply run it,
+Build this on Android Studio and run, then log-in (Restore wallet) with Test ID / Password (7777 / 7777)
 
-Current version supports Ethereum and ERC-20 Token Balance inquiry, and its' transaction history.
+## Current version Features
 
-ETH/ERC-20 transfer function is almost ready (Web3J, Infura API), but not yet implemented.
+* Balance inquiry of Ethereum & ERC-20 Token
+* Transaction history inquiry of Ethereum & ERC-20 Token
 
-Please refer to [Trust Wallet](https://github.com/TrustWallet/trust-wallet-android-source) in order to tranfer Tokens or Ethereum.
+## Features to be implemented
 
+* ETH/ERC-20 transfer function via Web3J, Infura API (sendRawTransaction).
 
-You may reach that goal via calliing [sendRawTransaction API](https://infura.io/docs/ethereum/json-rpc/eth_sendRawTransaction) at Infura.io.
-
-If any suggestions, contact me to https://github.com/method76
+Please refer to Client side [Trust Wallet](https://github.com/TrustWallet/trust-wallet-android-source),
+and server side [sendRawTransaction API](https://infura.io/docs/ethereum/json-rpc/eth_sendRawTransaction) at Infura.io.
 
 [<img src="https://wallet.cellpinda.com/img/mobile-wallet-screenshot.jpg">](https://play.google.com/store/apps/details?id=com.cellpinda.coin.wallet)
+
+If any suggestions, contact me to https://github.com/method76
