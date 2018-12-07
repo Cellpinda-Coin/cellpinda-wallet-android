@@ -1,3 +1,55 @@
 {
-  // fill your firebase info
+  "project_info": {
+    "project_number": "770724253888",
+    "firebase_url": "https://test.firebaseio.com",
+    "project_id": "test-native-mobile",
+    "storage_bucket": "test-native-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123456789000:android:f1bf012572b04063",
+        "android_client_info": {
+          "package_name": "com.cellpinda.coin.wallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "test.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cellpinda.coin.wallet",
+            "certificate_hash": "77db20aaa3639142564db396008de2f48a6a2288"
+          }
+        },
+        {
+          "client_id": "test.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "77zaSyAbJ0liEKa9G5V73YJKf-GBlssrQUz4j88"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "test-test.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
 }
